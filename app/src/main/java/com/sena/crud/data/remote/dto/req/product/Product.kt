@@ -7,47 +7,47 @@ import com.squareup.moshi.JsonClass
 @JsonClass(generateAdapter = true)
 data class Product(
     @param:Json(name = "availabilityStatus")
-    val availabilityStatus: String,
+    val availabilityStatus: String?,
     @param:Json(name = "brand")
-    val brand: String,
+    val brand: String?,
     @param:Json(name = "category")
-    val category: String,
+    val category: String?,
     @param:Json(name = "description")
-    val description: String,
+    val description: String?,
     @param:Json(name = "dimensions")
-    val dimensions: Dimensions,
+    val dimensions: Dimensions?,
     @param:Json(name = "discountPercentage")
-    val discountPercentage: Double,
+    val discountPercentage: Double?,
     @param:Json(name = "id")
     val id: Int,
     @param:Json(name = "images")
-    val images: List<String>,
+    val images: List<String>?,
     @param:Json(name = "meta")
-    val meta: Meta,
+    val meta: Meta?,
     @param:Json(name = "minimumOrderQuantity")
-    val minimumOrderQuantity: Int,
+    val minimumOrderQuantity: Int?,
     @param:Json(name = "price")
-    val price: Double,
+    val price: Double?,
     @param:Json(name = "rating")
-    val rating: Double,
+    val rating: Double?,
     @param:Json(name = "returnPolicy")
-    val returnPolicy: String,
+    val returnPolicy: String?,
     @param:Json(name = "reviews")
-    val reviews: List<Review>,
+    val reviews: List<Review>?,
     @param:Json(name = "shippingInformation")
-    val shippingInformation: String,
+    val shippingInformation: String?,
     @param:Json(name = "sku")
-    val sku: String,
+    val sku: String?,
     @param:Json(name = "stock")
-    val stock: Int,
+    val stock: Int?,
     @param:Json(name = "tags")
-    val tags: List<String>,
+    val tags: List<String>?,
     @param:Json(name = "thumbnail")
-    val thumbnail: String,
+    val thumbnail: String?,
     @param:Json(name = "title")
-    val title: String,
+    val title: String?,
     @param:Json(name = "warrantyInformation")
-    val warrantyInformation: String,
+    val warrantyInformation: String?,
     @param:Json(name = "weight")
-    val weight: Int
+    val weight: Int?
 )

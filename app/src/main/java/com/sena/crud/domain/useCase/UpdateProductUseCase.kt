@@ -1,19 +1,16 @@
 package com.sena.crud.domain.useCase
 
-
 import com.sena.crud.domain.model.ProductModel
 import com.sena.crud.domain.repository.ProductRepository
 import javax.inject.Inject
 
 /**
- * Caso de Uso para buscar un producto específico por su ID.
+ * Caso de Uso para actualizar un producto existente.
  */
-class GetProductUseCase @Inject constructor(
+class UpdateProductUseCase @Inject constructor(
     private val repository: ProductRepository
 ) {
-    suspend operator fun invoke(
-        id: Int
-    ): ProductModel {
-        return repository.getProductById(id)
+    suspend operator fun invoke(id: Int, product: ProductModel): ProductModel {
+        return repository.updateProduct(id, product)
     }
 }
